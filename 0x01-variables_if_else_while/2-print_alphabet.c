@@ -12,7 +12,7 @@ int main(void)
 	{
 		putchar(lc);
 	}
-	putchar('\n')
+	putchar('\n');
 
 	return (o);
 }

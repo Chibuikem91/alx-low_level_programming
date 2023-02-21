@@ -3,7 +3,7 @@
 /**
  * main - prints 10 times the alpha's in lowercase and prints a new line
  */
-void print_alphabet_x10(void);
+void print_alphabet_x10(void)
 {
 	int ten;
 	char la;

@@ -40,12 +40,12 @@ int main(void)
 	if (password[index] >= (33 + diff_half1))
 
 	{
-	paswword[index] -= diff_half1;
+	passwword[index] -= diff_half1;
 	break;
 	}
 	}
 
-	for (index = 0; password[index]; indexx++)
+	for (index = 0; password[index]; index++)
 	{
 
 	if (password[index] >= (33 + diff_half2))
@@ -55,6 +55,6 @@ int main(void)
 	}
 	}
 	}
-	printf("%d", password);
+	printf("%s", password);
 	return (0);
 }

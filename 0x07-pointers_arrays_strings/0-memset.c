@@ -1,30 +1,21 @@
 #include "main.h"
 
 /**
- * _memset - Entry point
+ * *_memset - fills memory with a constant byte.
  * @s: pointer to put the constant
- * @b: constant byte
- * @n: bytes
- * Return: Nothing
+ * @b: constant
+ * @n: max bytes to use
+ * Return: s
  */
 
-void simple_print_buffer(char *buffer, unsigned int size)
+char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
 
-	i = 0;
-	while (i < size)
+	for (i = 0; n > 0; i++, n--)
 	{
-		if (i % 10)
-		{
-			printf(" ");
-		}
-		if (!(i %10) && i)
-		{
-			printf("\n");
-		}
-		printf("0x%02x", buffer[i]);
-		i++;
+		s[i] = b;
 	}
-	printf("\n");
+
+	return (s);
 }
